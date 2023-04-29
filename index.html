@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <img class="logo" src="./images/logo.svg" alt="logo">
+  <main>
+    <section class="input-container">
+      <div class="error-box">
+        <h1>Bill</h1>
+        <div class="error-text top-error">Can't be zero</div> 
+      </div>
+      <input type="number" class="input-bill" placeholder="0">
+      <p1>Select Tip %</p1>
+      <div class="options">
+        <button class="percent">5%</button>
+        <button class="percent">10%</button>
+        <button class="percent">15%</button>
+        <button class="percent">25%</button>
+        <button class="percent">50%</button>
+        <input type="number" class="input-percent"placeholder="Custom"/>
+      </div>
+      <div class="error-box">
+        <p2>Number of People</p2>
+        <div class="error-text second-error">Can't be zero</div>
+      </div>
+      <input type="number" class="input-people" placeholder="0">
+    </section>
+    <section class="output-container">
+      <div class="calculation">
+        <div class="results amount">
+          <p3>Tip Amount</p3>
+          <p4>/ person</p4>
+        </div>
+        <div class="result-amount">$0.00</div>
+      </div>
+      <div class="calculation">
+        <div class="results total">
+          <p3>Total</p3>
+          <p4>/ person</p4>
+        </div>
+        <div class="result-total">$0.00</div>
+      </div>
+      <button class="reset">Reset</button>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
